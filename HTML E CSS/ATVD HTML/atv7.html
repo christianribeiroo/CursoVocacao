@@ -1,0 +1,189 @@
+<!-- EXERCÍCIO 7 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500 & display=swap');
+
+    * {
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-image: linear-gradient(180deg, rgb(84, 171, 221), rgb(18, 190, 196));
+        background-attachment: fixed;
+        font-size: 1em;
+        margin-top: 2%;
+    }
+
+    input,
+    select,
+    button {
+        border-radius: 5px;
+    }
+
+    h1,
+    p {
+        color: #fff;
+        text-align: center;
+    }
+
+    fieldset {
+        border: 0;
+    }
+
+    input#js,
+    #php,
+    #c,
+    #swift {
+         
+    }
+
+    fieldset.grupo .campo {
+        float: left;
+        margin-right: 1em;
+    }
+
+    select#cars {
+        background: white;
+        padding: 10px;
+        outline: none;
+        border: none;
+    }
+
+    .campo {
+        margin-left: 20px;
+    }
+
+    .campo label {
+        margin-bottom: 0.2em;
+        color: rgb(0, 255, 0);
+        display: block;
+    }
+
+    .campo input[type="text"],
+    input[type="email"],
+    label {
+        outline: none;
+        border: none;
+        width: 450px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .campo {
+        padding-right: 1em;
+    }
+
+    .linguagem label {
+        color: white;
+    }
+
+    button {
+        display: block;
+        border: none;
+        height: 50px;
+        width: 250px;
+        margin: 12% auto;
+        background: rgb(26, 12, 221);
+        color: white;
+        font-size: 2rem;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.466);
+    }
+
+
+    button:hover {
+        opacity: .8;
+        transform: scale(.9);
+        transition: .2s;
+    }
+
+    .background {
+        margin-top: 35px;
+        background-color: rgb(9, 18, 104);
+        width: 550px;
+        height: 750px;
+        border-radius: 50px;
+        box-shadow: 10px 2px 10px rgb(11, 94, 105);
+    }
+
+    .background #nome {
+        margin-top: 15px;
+    }
+
+    select#cars {
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+
+    <div>
+        <h1>Cadastro de Novos Alunos - Curso Vocação</h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+
+    <div class="background">
+    <form action="atv6.html" method="get">
+        <fieldset class="campo">
+
+                <div id="nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+                </div>
+        </fieldset>
+        <div class="campo">
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email" required>
+            </div>
+            <div class="linguagem">
+                <label style="color: rgb(0, 255, 0);">Qual tua linguagem favorita?</label>
+                <label>
+                    <input type="radio" name="devweb" id="js">JavaScript
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="php">PHP
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="c">C++
+                </label>
+                <label>
+                    <input type="radio" name="devweb" id="swift">Swift
+                </label>
+            </div>
+            <div>
+                <label for="cars">Qual sua cor favorita?</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Azul</option>
+                    <option value="saab">Verde</option>
+                    <option value="mercedes">Vermelho</option>
+                    <option value="audi">Roxo</option>
+                </select>
+            </div>
+            <div class="botao">
+                <button>Cadastrar</button>
+            </div>
+        </div>
+        
+    </form>
+
+
+</body>
+
+</html>

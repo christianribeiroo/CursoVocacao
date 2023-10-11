@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(rgb(113, 206, 90), rgb(250, 246, 0));
+    background-attachment: fixed;
+}
+
+form {
+    margin-top: 40px;
+}
+
+
+h1 {
+    color: blue;
+}
+
+h3 {
+    color: rebeccapurple;
+}
+
+th {
+    background-color: rgb(87, 86, 86);
+    color: white;
+}
+
+td.dado {
+    background-color: yellow;
+    color: black;
+}
+
+table {
+    background: rgb(177, 175, 175);
+    border: 1px solid black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 450px;
+    font-size: 2rem;
+    text-align: center; 
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 2px solid black;
+    color: white;
+}
